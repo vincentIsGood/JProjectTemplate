@@ -11,7 +11,7 @@ lib/org
 
 # DEV*
 /*.jar
-*.txt
+/*.txt
 *.jks
 *.pfx
 *.cer
