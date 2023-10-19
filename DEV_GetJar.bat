@@ -1,11 +1,12 @@
 @echo off
 
-set jarname=projectName
+set jarname=projectName_v1.0
 set structure=com/projectName/*
 
 :::: with Manifest
 :: Include the libraries into the jar
-:: cp -r lib/com/ .
+cp -r lib/com/ classes
+cp -r lib/org/ classes
 
 cd classes
 jar -cvfm %jarname%.jar Manifest.txt %structure%
